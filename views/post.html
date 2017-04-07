@@ -1,0 +1,13 @@
+<h1>Posts</h1>
+
+<div ng-repeat="post in posts">
+  <p style="width:500px">
+    {{post.id}} |
+  <a href="{{baseUrl}}/comments?postId={{post.id}}">
+    <b>{{post.title}}</b>
+  </a>
+    <br />
+    {{post.message}}
+</div>
+
+<a href="{{baseUrl}}/users" class="button">Back to users</a>

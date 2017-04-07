@@ -1,0 +1,11 @@
+<h1> Comments </h1>
+
+<div ng-repeat="comment in comments">
+  <p style="width:500px">
+    <b>{{comment.name}}</b>
+    <br />
+    {{comment.comment}}
+  </p>
+</div>
+
+<a href="{{baseUrl}}/posts?userId={{userId}}" class="button">Back to posts</a>
